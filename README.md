@@ -1,4 +1,3 @@
-
 ![Logo](https://i.postimg.cc/BnR7BwgS/QB-CORE-CAR-BOMB.png)
 
 
