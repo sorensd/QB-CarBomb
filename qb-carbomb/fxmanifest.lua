@@ -1,7 +1,7 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'YourName'
+author 'VisionDEV1'
 description 'QBCore Car Bomb Script'
 version '1.0.0'
 

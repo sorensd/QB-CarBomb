@@ -6,8 +6,9 @@ local beepSound = "Beep_Red" -- Example sound
 RegisterKeyMapping("placeCarBomb", "Place Car Bomb", "keyboard", "H")
 RegisterCommand("placeCarBomb", function()
     local ped = PlayerPedId()
+    local weaponHash = GetSelectedPedWeapon(ped)
     local vehicle = QBCore.Functions.GetClosestVehicle()
-
+    
     if weaponHash ~= GetHashKey("weapon_stickybomb") then
         QBCore.Functions.Notify("You must be holding a sticky bomb!", "error")
         return
