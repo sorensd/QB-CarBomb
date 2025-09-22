@@ -1,9 +1,9 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 local carBombs = {}
 
-RegisterNetEvent('qb-car-bomb:syncBomb', function(plate, netId, bombId)
-    carBombs[plate] = {netId = netId, bombId = bombId}
-    TriggerClientEvent('qb-car-bomb:syncBomb', -1, plate, netId, bombId)
+RegisterNetEvent('qb-car-bomb:syncBomb', function(netId, bombId)
+    carBombs[netId] = {netId = netId, bombId = bombId}
+    TriggerClientEvent('qb-car-bomb:syncBomb', -1, netId, bombId)
 end)
 
 RegisterNetEvent('qb-car-bomb:detonateAll', function()
